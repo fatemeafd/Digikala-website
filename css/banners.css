@@ -1,0 +1,45 @@
+.banner-one {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner-one-section {
+    width: 90%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    .images-four {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+
+    .images-tow {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+    }
+  }
+}

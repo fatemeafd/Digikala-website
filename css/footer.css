@@ -1,0 +1,48 @@
+.footer {
+  width: 100%;
+  background-color: rgb(193, 110, 110);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .back-home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      margin: 8px 15px;
+      img {
+        width: 195px;
+      }
+    }
+    .back {
+      margin: 8px 15px;
+      padding: 5px;
+
+      span {
+        padding: 18px;
+        color: #a2a3a8;
+        font-size: 15px;
+        border: 1px solid #a2a3a8;
+        border-radius: 16px;
+      }
+    }
+  }
+
+  .contact-us {
+    width: 100%;
+    .text {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

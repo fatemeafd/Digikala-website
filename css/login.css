@@ -1,0 +1,45 @@
+.register {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .register-card {
+    min-width: 400px;
+    border: 1px solid #e1e1e3;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    .register-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .img {
+        width: 50px;
+        /* size: 110px; */
+        height: 17px;
+        padding: 32px;
+      }
+    }
+
+    .register-body {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: 25px;
+      }
+
+      .rules {
+        display: flex;
+        flex-direction: row;
+        .privacy {
+          .a {
+            display: block;
+            /* height: ; */
+          }
+        }
+      }
+    }
+  }
+}
