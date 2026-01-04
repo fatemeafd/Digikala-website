@@ -20,6 +20,7 @@
       align-items: center;
       justify-content: space-between;
       height: 60px;
+
       h3 {
         font-size: 15px;
         font-weight: 900;
@@ -39,6 +40,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      gap: 15px;
 
       .parts {
         height: 100%;

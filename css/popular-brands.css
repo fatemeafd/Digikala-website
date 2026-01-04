@@ -4,14 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(163, 72, 72);
 
   .popular-brands-section {
     width: 90%;
     height: 200px;
-    /* border-radius: 16px solid #e0e0e2; */
+    border: 1px solid #f0f0f1;
     border-radius: 16px;
-    background-color: bisque;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,15 +43,11 @@
       align-items: center;
       justify-content: right;
       width: 100%;
-      background-color: aqua;
       height: 150px;
-      /* gap: 16px;
-      margin-top: 12px; */
 
       .swiper {
         width: 100%;
         height: 100%;
-        background-color: aquamarine;
         display: flex;
         justify-content: start !important;
 
@@ -65,9 +59,10 @@
       }
 
       .swiper-slide {
+        height: 130px;
         text-align: center;
         font-size: 18px;
-        background: #444;
+        border-left: 1px solid #f0f0f1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -78,6 +73,8 @@
         width: 110px;
         height: 110px;
         object-fit: cover;
+        padding: 8px;
+        margin-left: 12px;
       }
     }
   }
