@@ -90,11 +90,13 @@
       width: 80%;
       height: 100%;
       display: flex;
+      justify-content: space-between;
       nav {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: start;
         margin-right: 10px;
         a {
           font-size: 12px;
@@ -105,8 +107,6 @@
         img {
           width: 18px;
           margin-right: 10px;
-          color: #62666e !important;
-          margin-top: 20px;
         }
         span {
           margin-right: 10px;
@@ -115,6 +115,81 @@
           background-color: #e0e0e2;
         }
       }
+    }
+
+    .menu-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    .submenu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+
+      width: 80vw;
+      height: 70vh;
+
+      background-color: #fff;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+      display: flex;
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: 250ms;
+
+      z-index: 9999;
+    }
+
+    /* SHOW ON HOVER */
+    .has-submenu:hover .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    /* RIGHT COLUMN */
+    .submenu-right {
+      width: 20%;
+      background-color: #f5f5f5;
+      border-left: 1px solid #e0e0e2;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .submenu-right-item {
+      padding: 12px 16px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .submenu-right-item:hover {
+      background-color: #fff;
+      color: #ef4056;
+    }
+
+    .submenu-left {
+      width: 80%;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .submenu-left a {
+      font-size: 13px;
+      color: #424750;
+      text-decoration: none;
+    }
+
+    .submenu-left p {
+      font-size: 12px;
+      color: #81858b;
+      margin-right: 16px;
     }
 
     .header-menu-left {
@@ -145,22 +220,5 @@
         }
       }
     }
-  }
-}
-.submenu-cat {
-  font-size: 12px;
-  text-decoration: none;
-  color: #62666e;
-  margin-right: 10px;
-  transition: 300ms;
-  /* padding: 5px; */
-  &:hover {
-    background-color: gold;
-    transition: 300ms;
-  }
-
-  .submenu {
-    width: 0;
-    height: 0;
   }
 }
